@@ -1,23 +1,6 @@
-# play-java-ebean-example
+# Crud a Tabla productos
 
-This is an example Play application that uses Java, and communicates with an in memory database using EBean.
+Ejemplo de aplicacion basica , de un Crud Usando la version de Java 8 y la tecnologia Play en su version 2.4
+Logrando un 80% en el desarrollo de este proyecto.
 
-The GitHub location for this project is inside:
 
-<https://github.com/playframework/play-samples>
-
-## Play
-
-Play documentation is here:
-
-[https://playframework.com/documentation/latest/Home](https://playframework.com/documentation/latest/Home)
-
-## EBean
-
-EBean is a Java ORM library that uses SQL:
-
-[https://www.playframework.com/documentation/latest/JavaEbean](https://www.playframework.com/documentation/latest/JavaEbean)
-
-and the documentation can be found here:
-
-[https://ebean-orm.github.io/](https://ebean-orm.github.io/)
