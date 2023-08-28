@@ -1,0 +1,11 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Default path will just redirect to the computer list
+GET     /productos                   controllers.ProductosController.index()
+GET     /productos/nuevo             controllers.ProductosController.create()
+POST    /productos                   controllers.ProductosController.save()
+GET     /productos/editar/:id        controllers.ProductosController.edit(id: Integer)
+POST    /productos/editar/:id        controllers.ProductosController.update(id: Integer)
+POST    /productos/eliminar/:id      controllers.ProductosController.delete(id: Integer)

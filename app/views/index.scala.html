@@ -1,0 +1,36 @@
+@import models._
+@(productos: List[Productos])
+@main("Lista de Productos") {
+    <div class="container">
+        <h2>Lista de Productos</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Descripcion</th>
+                    <th>Fecha de Crecion</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+            @for(producto <- productos) {
+                <tr>
+                    <td>@producto.id</td>
+                    <td>@producto.nombre</td>
+                    <td>@producto.precio</td>
+                    <td>@producto.descripcion</td>
+                    <td>@producto.fecha_creacion</td>
+                    <td>@if(producto.disponible) { Disponible } else { No disponible }</td>
+                    <td>
+                        <a href="@routes.ProductosController.edit(producto.id)" class="btn btn-primary">Editar</a>
+                        <a href="@routes.ProductosController.delete(producto.id)" class="btn btn-danger">Eliminar</a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+        <a href="@routes.ProductosController.create()" class="btn btn-success">Crear Producto</a>
+    </div>
+}

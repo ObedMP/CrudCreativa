@@ -1,0 +1,42 @@
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\User\OneDrive\Escritorio\PROYECTOS JAVA\Creativa\app\views\tags\forms\FormHelper.scala:7:16: Implicit definition should have explicit type (inferred views.html.helper.FieldConstructor)[0m
+[0m[[0m[33mwarn[0m] [0m[0m  implicit val inlineBootstrapConstructor = FieldConstructor(field_constructor.f)[0m
+[0m[[0m[33mwarn[0m] [0m[0m               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\User\OneDrive\Escritorio\PROYECTOS JAVA\Creativa\app\views\create.scala.html:8:59: symbol literal is deprecated; use Symbol("class") instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m        @form(action = routes.ProductosController.save(), 'class -> "form") {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\OneDrive\Escritorio\PROYECTOS JAVA\Creativa\app\views\delete.scala.html:6:63: not found: value producto[0m
+[0m[[0m[31merror[0m] [0m[0m        <p>¿Estás seguro de que deseas eliminar el producto "@producto.nombre"?</p>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\OneDrive\Escritorio\PROYECTOS JAVA\Creativa\app\views\delete.scala.html:7:58: not found: value producto[0m
+[0m[[0m[31merror[0m] [0m[0m        <form action="@routes.ProductosController.delete(producto.id)" method="post">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\OneDrive\Escritorio\PROYECTOS JAVA\Creativa\app\views\edit.scala.html:7:68: value id is not a member of object models.Productos[0m
+[0m[[0m[31merror[0m] [0m[0mdid you mean find?[0m
+[0m[[0m[31merror[0m] [0m[0m        @form(action = routes.ProductosController.update(Productos.id), 'class -> "form") {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\OneDrive\Escritorio\PROYECTOS JAVA\Creativa\app\views\edit.scala.html:10:91: not found: value producto[0m
+[0m[[0m[31merror[0m] [0m[0m                <input type="text" class="form-control" id="nombre" name="nombre" value="@producto.nombre" required>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\OneDrive\Escritorio\PROYECTOS JAVA\Creativa\app\views\edit.scala.html:14:93: not found: value producto[0m
+[0m[[0m[31merror[0m] [0m[0m                <input type="number" class="form-control" id="precio" name="precio" value="@producto.precio" required>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\OneDrive\Escritorio\PROYECTOS JAVA\Creativa\app\views\edit.scala.html:18:94: not found: value producto[0m
+[0m[[0m[31merror[0m] [0m[0m                <textarea class="form-control" id="descripcion" name="descripcion" rows="3">@producto.descripcion</textarea>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\OneDrive\Escritorio\PROYECTOS JAVA\Creativa\app\views\edit.scala.html:22:103: not found: value producto[0m
+[0m[[0m[31merror[0m] [0m[0m                <input type="checkbox" class="form-check-input" id="disponible" name="disponible" @if(producto.disponible) {checked}>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\User\OneDrive\Escritorio\PROYECTOS JAVA\Creativa\app\views\edit.scala.html:7:73: symbol literal is deprecated; use Symbol("class") instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m        @form(action = routes.ProductosController.update(Productos.id), 'class -> "form") {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\OneDrive\Escritorio\PROYECTOS JAVA\Creativa\app\views\main.scala.html:9:73: value Assets is not a member of object controllers.routes[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/bootstrap/bootstrap.min.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\OneDrive\Escritorio\PROYECTOS JAVA\Creativa\app\views\main.scala.html:12:57: value Assets is not a member of object controllers.routes[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")"/>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\OneDrive\Escritorio\PROYECTOS JAVA\Creativa\app\views\main.scala.html:16:26: value Assets is not a member of object controllers.routes[0m
+[0m[[0m[31merror[0m] [0m[0m    <script src="@routes.Assets.versioned("javascripts/main.js")" type="text/javascript"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m
+[0m[[0m[31merror[0m] [0m[0m10 errors found[0m
